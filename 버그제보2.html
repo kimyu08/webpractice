@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+ <meta charset="utf-8">
+ <link rel="stylesheet" href="style1.css">
+ <script language="JavaScript">
+	function bnclick(){
+		alert("제보 감사합니다 ^^");
+	}
+	function logout(){
+		alert("로그아웃 되었습니다.^^");
+		document.location.href="메인2.html";
+	}
+ </script>
+ </head>
+ <body>
+  <div style="width:2000px;" >
+  <ul id="logo">
+		<a href="메인2.html" class="sub"><p>겜공페</p></a>
+		<h1 style="font-size:18px;";>(게임공략페이지)</h1>
+   </ul>
+   <ul id="top_menu">
+     <a href="메인.html" class="sub" onclick="logout()"><li> 로그아웃 |</li></a>
+
+   </ul>
+ 
+   <div class="clear"></div> 
+ 
+   <ul id="main_menu">
+     <li><a href="메인2.html" class="main">Home</a></li>
+	 <li><a href="메이플소개2.html" class="main">메이플</a><ul id="drop_menu">
+		<li><a href="메이플소개2.html">게임소개</a></li>
+		<li><a href="메이플사냥터2.html">사냥터</a></li>
+		<li><a href="메이플직업추천2.html">직업추천</a></li>
+	 </ul></li>
+     <li><a href="gta소개2.html" class="main">GTA5</a><ul id="drop_menu">
+		<li><a href="gta소개2.html">게임소개</a></li>
+		<li><a href="gta무기리뷰2.html">필수무기</a></li>
+		<li><a href="gta돈벌기2.html">돈버는법</a></li>
+	 </ul></li>
+     <li><a href="롤게임소개2.html" class="main">LOL</a><ul id="drop_menu">
+		<li><a href="롤게임소개2.html">게임소개</a></li>
+		<li><a href="롤패치2.html">패치노트</a></li>
+		<li><a href="롤템트리2.html">템트리</a></li>
+	 </ul></li>
+     <li><a href="버그제보2.html" class="main">버그제보</a></li>
+   </ul>
+   <br><br><br><br><br><br>
+    <div class="wrap">
+        <form class="question-form" action="">
+            <div class="form-header">
+                <h1>버그제보</h1>
+            </div>
+			버그 제목: <input type="text" name="title" style="height:30px; width:500px"><br><br>
+			제보 게임: <input type="text" name="title" style="height:30px; width:500px"><br><br>
+			제보 내용: <input type="text" name="title" style="height:300px; width:500px"><br><br>
+            <div class="form-group">
+               <button class="form-button" type="submit" value="확인" onclick="bnclick()">제보하기</button>
+            </div>
+        </form>
+    </div>
+</form>
+</section>
+</div>
+ </body>
+</html>
